@@ -1,0 +1,271 @@
+::before::after{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Pangolin";
+    src:url(./fonts/Pangolin-Regular.woff2) format("woff2")
+  }
+  
+@font-face {
+      font-family: "Provicali";
+      src:url(./fonts/Provicali/400.woff2) format("woff2")
+  }
+
+  body{
+    margin:0;
+    overflow-x: hidden; /*attention*/
+    font-family: "Pangolin", "sans-serif";
+    font-size:1.5rem;
+
+}
+
+
+/* Mise en place de la section projets */
+
+.cardContainer{
+    width: 100vw;
+    height:auto;
+    position:relative;
+    padding-top:200px;
+    margin-top:200px;
+    border:solid black 1px;
+    /* overflow: hidden; */
+}
+
+.card{
+    width:80vw;
+    height:100vw;
+    box-shadow: 0px 4px 90px 0px rgba(0, 0, 0, 0.25);
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 4.5fr 2fr;
+    place-content: center;
+    transition: ease-in-out 0.2s;
+    position: absolute;/*C'est ça qui pose pb*/
+}
+
+.imgCard{
+    background-size: cover;
+    background-position: center;
+    margin:20px;
+}
+
+
+a{
+    color:black;
+    text-decoration:none;
+}
+
+.titleCard, .competenceCard{
+    text-align:center;
+}
+
+.titleCard{
+    font-size:2rem;
+}
+
+
+
+/* .card:hover{
+    transform: scale(1.2);
+    
+} */
+
+.un{
+    background-color: #F0E8D3;
+    left:0px;
+    top:200px;
+    transform: rotate(20deg); 
+    z-index:100;
+}
+
+.un:hover{
+    transform: rotate(24deg) scale(1.1); 
+}
+
+.un >.imgCard{
+    background-image:url(./img/Gotatrip.png);
+}
+
+.deux{
+    background-color: #D7C4CD;
+    right:0px;
+    top:600px;
+    transform: rotate(-20deg); 
+}
+
+.deux:hover{
+    transform: rotate(-24deg) scale(1.1); 
+}
+
+.deux >.imgCard{
+    background-image:url(./img/unblinded.png);
+}
+
+.trois{
+    background-color: #BDCCCC;
+    top:980px;
+    left:0px;
+    transform:rotate(20deg); 
+}
+
+.trois:hover{
+    transform: rotate(24deg) scale(1.1); 
+}
+
+.trois >.imgCard{
+    background-image:url(./img/AfficheRendu.jpg);
+}
+
+.quatre{
+    background-color: #CECAC5;
+    top:1430px;;
+    right:0;
+    transform:rotate(-15deg);
+}
+
+.quatre:hover{
+    transform: rotate(-19deg) scale(1.1); 
+}
+
+.quatre >.imgCard{
+    background-image:url(./img/REDESIGN\ MMIND\ INSTAGRAM.jpg);
+}
+
+.cinq{
+    background-color: #F0E8D3;
+    top:2000px;
+    left:0;
+    transform:rotate(15deg); 
+     z-index:100 !important; 
+}
+
+.cinq:hover{
+    transform: rotate(19deg) scale(1.1); 
+}
+
+
+.cinq >.imgCard{
+    background-image:url(./img/Charte\ graphique\ unblinded.jpg);
+}
+
+@media(min-width:400px){
+    .card{
+        width:70vw;
+        height:90vw;
+    }
+}
+
+
+
+
+@media(min-width:550px){
+    .card{
+        width:65vw;
+        height:85vw;
+    }
+
+
+    .deux{
+        top:700px;
+    }
+    .trois{
+        top:1150px;
+    }
+
+    .quatre{
+        top:1650px;
+    }
+    .cinq{
+        top:2150px;
+    }
+}
+
+@media(min-width:800px){
+    
+    .card{
+        width:45vw;
+        height:65vw;
+    }
+
+    .un{
+        transform: rotate(32deg);
+        top:300px;
+    }
+
+    .un:hover{
+        transform:rotate(40deg) scale(1.1) ;
+    }
+    .deux{
+        transform: rotate(-10deg);
+        top:180px;
+        right:60px;
+    }
+
+    .deux:hover{
+        transform:rotate(-18deg) scale(1.1) ;
+    }
+    .trois{
+        transform: rotate(-7deg);
+        top:900px;
+        left:100px;
+    }
+    .trois:hover{
+        transform:rotate(-15deg) scale(1.1) ;
+    }
+    .quatre{
+        transform: rotate(19deg);
+        top:800px
+    }
+    .quatre:hover{
+        transform:rotate(27deg) scale(1.1) ;
+    }
+    .cinq{
+        transform: rotate(-12.5deg);
+        top:1500px;
+        left:400px;
+    }
+    .cinq:hover{
+        transform:rotate(-20.5deg) scale(1.1) ;
+    }
+}
+
+@media(min-width:1000px){
+   
+    .trois{
+        top:1050px;
+    }
+    .quatre{
+        top:950px;
+    }
+    .cinq{
+        top:1750px;
+        left:600px;
+    }
+
+    .imgCard{
+        margin:35px;
+    }
+}
+
+@media(min-width:1200px){
+
+    .trois{
+        top:1200px;
+    }
+    .quatre{
+        top:1100px;
+    }
+    .cinq{
+        top:2150px;
+        left:600px;
+    }
+}
+
+
+
+/* Comment faire car je veux que mon overflow soit hidden, cependant si je fais ça alors je ne epux pas faire en sorte que la hauteur ma boite s'adapte à son contenu */
+
+
+
