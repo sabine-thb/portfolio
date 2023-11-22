@@ -6,7 +6,6 @@ gsap.from('.lienProjet',{
 })
 
 gsap.from('.contact .circle',{ 
-    delay:1,
     duration:4,
     opacity: 0,
     stagger:0.5,

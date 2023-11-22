@@ -15,6 +15,8 @@
     <title>Portfolio Sabine</title>
     <link rel="stylesheet" href="styleAccueil.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/logo.png" />
+
    
     
 </head>
@@ -24,6 +26,9 @@
     <div class="cursor2"></div>
     <header>
         <nav>
+            <a href="index.php" class="lienLogo">
+                <img src="./img/logo.png" alt="retour à l'accueil" class="logo">
+            </a>
             <a href="#quiSuisJe" class="navItems">Qui suis-je ?</a>
             <a href="#mesProjets" class="navItems">Mes projets</a>
             <a href="#contact" class="navItems">Contact</a>

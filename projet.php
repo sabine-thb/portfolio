@@ -27,12 +27,16 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
     <title>Sabine - projets</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleProjets.css">
+    <link rel="shortcut icon" type="image/png" href="./img/logo.png" />
 </head>
 <body>
     <div class="cursor"></div>
     <div class="cursor2"></div>
     <header>
         <nav>
+            <a href="index.php" class="lienLogo">
+                <img src="./img/logoViolet.png" alt="retour à l'accueil" class="logo">
+            </a>
             <a href="index.php#quiSuisJe" class="navItems">Qui suis-je ?</a>
             <a href="index.php#mesProjets" class="navItems">Mes projets</a>
             <a href="index.php#contact" class="navItems">Contact</a>
@@ -52,12 +56,14 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
                      <img src="./img/taches.png" class="taches">
                      <div class="competences">Compétences : <?php foreach ($result as $row) echo $row["competences"]?></div>
                 </div>
-                <!-- <div class="titreProj">Le projet, c'est quoi ?</div> -->
+                <div class="date">Réalisé en <?php foreach ($result as $row) echo $row["date"]?> </div>
                 <div class="txt"><?php foreach ($result as $row) echo $row["description"]?></div>
+                <a href="index.php#mesProjets" class="autresProjets">Voir les autres projets</a>
                 <a href="<?php foreach ($result as $row) echo $row["lien"]?>" class="lienProjet">Voir le projet</a>
+           </div>
+           
         </div>
-            
-        </div>
+
     </section>
     <footer>
         <div class="contactez-moi">
