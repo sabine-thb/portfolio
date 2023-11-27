@@ -28,6 +28,10 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleProjets.css">
     <link rel="shortcut icon" type="image/png" href="./img/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script defer type="text/javascript"
+    src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 </head>
 <body>
     <div class="cursor"></div>
@@ -35,7 +39,7 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
     <header>
         <nav>
             <a href="index.php" class="lienLogo">
-                <img src="./img/logoViolet.png" alt="retour à l'accueil" class="logo">
+                <img src="./img/logo.png" alt="retour à l'accueil" class="logo">
             </a>
             <a href="index.php#quiSuisJe" class="navItems">Qui suis-je ?</a>
             <a href="index.php#mesProjets" class="navItems">Mes projets</a>
@@ -72,6 +76,7 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
             <div class="line"></div>
         </div>
         <div class="contact">
+             <a href="https://github.com/sabine-thb" class=" circle github"></a>
              <a href="https://www.linkedin.com/in/sabine-thibout-0965b1251" class=" circle linkedin"></a>
              <a href="mailto:sabine@thibout.fr" class="circle mail"></a>
              <a href="tel:+33651827205" class="circle tel"></a>

@@ -5,7 +5,6 @@
 
 body {
     margin: 0;
-    /*overflow-x: hidden; ATTENTION */
     font-family: "Pangolin", "sans-serif";
     font-size: 1.2rem;
 }
@@ -258,8 +257,8 @@ a {
 }
 
 .circle {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-size: cover;
     background-position: center;
     transition: transform 0.2s ease-in-out;
@@ -267,6 +266,10 @@ a {
 
 .circle:hover {
     transform: scale(1.15);
+}
+
+.github{
+    background-image: url(./img/github-round.svg);
 }
 
 .linkedin {

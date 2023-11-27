@@ -24,36 +24,21 @@ html {
 
 body{
     margin:0;
+
 }
 
-.cursor{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: absolute;
-    transform: scale(1);
-    background-color: black;  
+
+body #magicMouseCursor {
+    border: 1px solid rgb(0, 0, 0) !important;
     mix-blend-mode: hard-light;
-    transition-timing-function: ease-out;
-    transition-duration: 50ms;
-    z-index: 201;
-    pointer-events: none;
-}
-
-.cursor2{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
-    transform: scale(3);
-    background-color: white;
-    border:1px solid black;
-    opacity: 0.5;
-    transition-timing-function: ease-out;
-    transition-duration: 200ms;
-    z-index: 200;
-    pointer-events: none;
-}
+  }
+  
+body #magicPointer {
+    background: rgb(0, 0, 0) !important;
+    mix-blend-mode: hard-light;
+    position: relative;
+    z-index:3000000000;
+  }
 
 
 nav{
@@ -103,8 +88,7 @@ margin-right: auto;}
 
     nav{
         gap:50px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 25px;
     }
 
     .navItems{
@@ -113,10 +97,9 @@ margin-right: auto;}
 
 }
 
-@media(min-width:1100px){
+/* @media(min-width:1100px){
     nav{
         padding-right:100px;
-        padding-left:100px;
         
     }
-}
+} */

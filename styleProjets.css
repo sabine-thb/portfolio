@@ -122,7 +122,6 @@ a {
     text-decoration: underline;
     color:#7D9B9B;
     align-self: flex-end;
-    margin-right: 200px;
 }
 
 /*Je mets en place le footer*/
@@ -173,8 +172,12 @@ footer{
     transform: scale(1.15);
 }
 
+.github{
+    background-image: url(./img/githubWhite.svg);
+}
+
 .linkedin {
-    background-image: url(./img/linkedinRoundWhite.svg);
+    background-image: url(./img/linkedinWhite.svg);
 }
 
 .mail {

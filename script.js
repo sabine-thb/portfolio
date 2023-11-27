@@ -1,15 +1,19 @@
-function scrollToSection() {
-    const section = document.getElementById("quiSuisJe");
-    console.log(section)
-    section.scrollIntoView({ behavior: "smooth" });
-}
+document.addEventListener("DOMContentLoaded", function () {
 
-const cursor = document.querySelector('.cursor');
-	document.addEventListener('mousemove', e => {
-		cursor.setAttribute("style", " top: "+(e.pageY -10)+"px; left: "+(e.pageX -10)+"px; ")
-	});
+	//CURSOR
 
-	const cursor2 = document.querySelector('.cursor2');
-	document.addEventListener('mousemove', e => {
-		cursor2.setAttribute("style", " top: "+(e.pageY -10)+"px; left: "+(e.pageX -10)+"px; ")
-	});
+	options = {
+		"cursorOuter": "circle-basic",
+		"hoverEffect": "circle-move",
+		"hoverItemMove": false,
+		"defaultCursor": false,
+		"outerWidth": 40,
+		"outerHeight": 40,
+	  };
+	  magicMouse(options);
+	
+	  AOS.init({});
+	
+
+
+});
