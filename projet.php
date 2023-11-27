@@ -76,7 +76,7 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
             <div class="line"></div>
         </div>
         <div class="contact">
-             <a href="https://github.com/sabine-thb" class=" circle github"></a>
+            <a href="https://github.com/sabine-thb" class=" circle github"></a>
              <a href="https://www.linkedin.com/in/sabine-thibout-0965b1251" class=" circle linkedin"></a>
              <a href="mailto:sabine@thibout.fr" class="circle mail"></a>
              <a href="tel:+33651827205" class="circle tel"></a>
