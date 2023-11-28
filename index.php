@@ -31,10 +31,9 @@
             <a href="index.php" class="lienLogo">
                 <img src="./img/logo.png" alt="retour à l'accueil" class="logo">
             </a>
-            <a href="#quiSuisJe" class="navItems">Qui suis-je ?</a>
-            <a href="#mesProjets" class="navItems">Mes projets</a>
+            <a href="#quiSuisJe" class="navItems change"></a>
+            <a href="#mesProjets" class="navItems change2"></a>
             <a href="#contact" class="navItems">Contact</a>
-            <a href="#contact" class="burger"></a>
             
 
         </nav>
@@ -55,7 +54,7 @@
             <p>Actuellement en 2ème année de BUT Métiers du Multimédia et de l’Internet, je suis
                 passionnée par la création d’interfaces web.</p>
 
-            <p>Que ce soit la réalisation de wireframes ou le développement web, tout m’intéresse ! Je me suis découvert
+            <p>Que ce soit la réalisation de wireframes ou le développement web, tout m’intéresse ! <br>Je me suis découvert
                 en
                 première année une préférence particulière pour le tout ce qui touche au code front et back.</p>
             <p>Curieuse et motivée, je ne cesse d’en apprendre davantage chaque jour, et j’espère avoir l’opportunité de
@@ -160,7 +159,7 @@
         <div class="taches cont"></div>
         <h2 class="title" id="contact">Contact</h2>
     </div>
-    <p class="paragraphe" id="par2">Si tu es intéressé par mes compétences et mon profil, alors n’hésites pas à me contacter ! Je serais ravie de pouvoir échanger avec toi sur mes compétences professionnelles. <br>
+    <p class="paragraphe" id="par2">Si tu es intéressé par mes compétences et mon profil, alors n’hésites pas à me contacter ! <br> Je serais ravie de pouvoir échanger avec toi sur mes compétences professionnelles. 
     Je te partage également mon compte github si tu souhaites regarder de plus près mes projets en développement web.
     </p>
     <div class="contact">

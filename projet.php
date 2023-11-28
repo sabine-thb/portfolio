@@ -41,8 +41,8 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
             <a href="index.php" class="lienLogo">
                 <img src="./img/logo.png" alt="retour à l'accueil" class="logo">
             </a>
-            <a href="index.php#quiSuisJe" class="navItems">Qui suis-je ?</a>
-            <a href="index.php#mesProjets" class="navItems">Mes projets</a>
+            <a href="index.php#quiSuisJe" class="navItems change"></a>
+            <a href="index.php#mesProjets" class="navItems change2"></a>
             <a href="index.php#contact" class="navItems">Contact</a>
         </nav>
     </header>
