@@ -57,6 +57,7 @@
             <p>Que ce soit la réalisation de wireframes ou le développement web, tout m’intéresse ! <br>Je me suis découvert
                 en
                 première année une préférence particulière pour le tout ce qui touche au code front et back.</p>
+            <p>J'ai choisi de poursuivre mon cursus avec le parcours développement web et dispositifs interactifs.</p>
             <p>Curieuse et motivée, je ne cesse d’en apprendre davantage chaque jour, et j’espère avoir l’opportunité de
                 travailler plus tard dans le développement d’interfaces :) </p>
         </div>
