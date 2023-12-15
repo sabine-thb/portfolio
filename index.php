@@ -1,6 +1,6 @@
 <?php
     include("connexion.php");
-    $requete="SELECT * FROM projets WHERE id_proj=1";
+    $requete="SELECT * FROM projets";
     $stmt = $db->query($requete);
     $result = $stmt->fetchall(PDO::FETCH_ASSOC);
 
@@ -72,88 +72,15 @@
     Ceux-ci, très variés, te présenteront  un extrait de mes diverses compétences dans la création de produits multimédia !</p>
     <section class="projets">
         <div class="cardContainer">
-            <a href="projet.php?proj=<?php foreach ($result as $row) echo $row["id_proj"]?>" style=" background-color:#<?php foreach ($result as $row) echo $row["couleur"]?>"  class="card un">
-                <div class="imgCard"  style="background-image: url('./img/<?php foreach ($result as $row) echo $row["id_proj"]?>.jpg');"></div>
-                <div class="texte">
-                    <div class="titleCard"> Gotatrip</div>
-                    <div class="competenceCard">Développement web</div>
-                </div>
-            </a>
-
-            <!-- Je change l'id de projet sur lequel ma carte va pointer  -->
-            <?php 
-            $requete="SELECT * FROM projets WHERE id_proj=2";
-            $stmt = $db->query($requete);
-            $result = $stmt->fetchall(PDO::FETCH_ASSOC);
-            ?>
-
-            <a href="projet.php?proj=<?php foreach ($result as $row) echo $row["id_proj"]?>" style=" background-color:#<?php foreach ($result as $row) echo $row["couleur"]?>" class="card deux">
-                <div class="imgCard"  style="background-image: url('./img/<?php foreach ($result as $row) echo $row["id_proj"]?>.jpg');"></div>
-                <div class="texte">
-                    <div class="titleCard">Unblinded</div>
-                    <div class="competenceCard">Wordpress</div>
-                </div>
-            </a>
-
-            <!-- Je change l'id de projet sur lequel ma carte va pointer  -->
-            <?php 
-            $requete="SELECT * FROM projets WHERE id_proj=3";
-            $stmt = $db->query($requete);
-            $result = $stmt->fetchall(PDO::FETCH_ASSOC);
-            ?>
-
-            <a href="projet.php?proj=<?php foreach ($result as $row) echo $row["id_proj"]?>" style=" background-color:#<?php foreach ($result as $row) echo $row["couleur"]?>"  class="card trois">
-                <div class="imgCard"  style="background-image: url('./img/<?php foreach ($result as $row) echo $row["id_proj"]?>.jpg');"></div>
-                <div class="texte">
-                    <div class="titleCard">Affiche festival</div>
-                    <div class="competenceCard">Suite adobe</div>
-                </div>
-            </a>
-
-            <!-- Je change l'id de projet sur lequel ma carte va pointer  -->
-            <?php 
-            $requete="SELECT * FROM projets WHERE id_proj=4";
-            $stmt = $db->query($requete);
-            $result = $stmt->fetchall(PDO::FETCH_ASSOC);
-            ?>
-
-            <a href="projet.php?proj=<?php foreach ($result as $row) echo $row["id_proj"]?>" style=" background-color:#<?php foreach ($result as $row) echo $row["couleur"]?>"  class="card quatre">
-                <div class="imgCard"  style="background-image: url('./img/<?php foreach ($result as $row) echo $row["id_proj"]?>.jpg');"></div>
-                <div class="texte">
-                    <div class="titleCard">MMind</div>
-                    <div class="competenceCard">Figma</div>
-                </div>
-            </a>
-
-            <!-- Je change l'id de projet sur lequel ma carte va pointer  -->
-            <?php 
-            $requete="SELECT * FROM projets WHERE id_proj=5";
-            $stmt = $db->query($requete);
-            $result = $stmt->fetchall(PDO::FETCH_ASSOC);
-            ?>
-
-            <a href="projet.php?proj=<?php foreach ($result as $row) echo $row["id_proj"]?>" style=" background-color:#<?php foreach ($result as $row) echo $row["couleur"]?>"  class="card cinq">
-                <div class="imgCard"  style="background-image: url('./img/<?php foreach ($result as $row) echo $row["id_proj"]?>.jpg');"></div>
-                <div class="texte">
-                    <div class="titleCard">Dataviz</div>
-                    <div class="competenceCard">Développement web</div>
-                </div>
-            </a>
-
-            <!-- Je change l'id de projet sur lequel ma carte va pointer  -->
-            <?php 
-            $requete="SELECT * FROM projets WHERE id_proj=6";
-            $stmt = $db->query($requete);
-            $result = $stmt->fetchall(PDO::FETCH_ASSOC);
-            ?>
-
-            <a href="projet.php?proj=<?php foreach ($result as $row) echo $row["id_proj"]?>" style=" background-color:#<?php foreach ($result as $row) echo $row["couleur"]?>" class="card six">
-                <div class="imgCard"  style="background-image: url('./img/<?php foreach ($result as $row) echo $row["id_proj"]?>.jpg');"></div>
-                <div class="texte">
-                    <div class="titleCard">Campagne de com'</div>
-                    <div class="competenceCard">Figma</div>
-                </div>
-            </a>
+            <?php foreach ($result as $row){?>
+                <a href="projet.php?proj=<?php echo $row["id_proj"]?>" style=" background-color:#<?php echo $row["couleur"]?>"  class=" card card<?php echo $row["id_proj"]?>">
+                    <div class="imgCard"  style="background-image: url('./img/<?php echo $row["id_proj"]?>.jpg');"></div>
+                    <div class="texte">
+                        <div class="titleCard"> Gotatrip</div>
+                        <div class="competenceCard">Développement web</div>
+                    </div>
+                </a>
+            <?php } ?>
         </div>
     </section>
     <div class="titlesection">

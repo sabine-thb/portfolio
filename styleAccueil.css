@@ -195,52 +195,52 @@ a {
     
 } */
 
-.un {
+.card1 {
     transform: translate(15vw, 10vw) rotate(-15deg);
     z-index: 2;
 }
 
-.un:hover {
+.card1:hover {
     transform: scale(1.1) translate(15vw, 10vw) rotate(-15deg);
 }
 
-.deux {
+.card2 {
     transform: translate(-15vw, 0) rotate(15deg);
 }
 
-.deux:hover {
+.card2:hover {
     transform: scale(1.1) translate(-15vw, 0) rotate(15deg);
 }
 
-.trois {
+.card3 {
     transform: translate(15vw, -10vw) rotate(-15deg);
 }
 
-.trois:hover {
+.card3:hover {
     transform: scale(1.1) translate(15vw, -10vw) rotate(-15deg);
 }
 
-.quatre {
+.card4 {
     transform: translate(-15vw, -20vw) rotate(15deg);
 }
 
-.quatre:hover {
+.card4:hover {
     transform: scale(1.1) translate(-15vw, -20vw) rotate(15deg);
 }
 
-.cinq {
+.card5 {
     transform: translate(15vw, -10vw) rotate(-15deg);
 }
 
-.cinq:hover {
+.card5:hover {
     transform: scale(1.1) translate(15vw, -10vw) rotate(-15deg);
 }
 
-.six{
+.card6{
     transform: translate(-15vw, -23vw) rotate(15deg);
 }
 
-.six:hover {
+.card6:hover {
     transform: scale(1.1) translate(-15vw, -23vw) rotate(15deg);
 }
 
@@ -385,51 +385,51 @@ footer {
 
     }
 
-    .un {
+    .card1 {
         transform: translate(-2vw, 0) rotate(32deg);
     }
 
-    .un:hover {
+    .card1:hover {
         transform: scale(1.2) translate(0vw, 0vw) rotate(15deg);
     }
 
-    .deux {
+    .card2 {
         transform: translate(0vw, -10vw) rotate(-10deg);
     }
 
-    .deux:hover {
+    .card2:hover {
         transform: scale(1.2) translate(0vw, -3vw) rotate(-15deg);
     }
 
-    .trois {
+    .card3 {
         transform: translate(6vw, 0) rotate(-7deg);
     }
 
-    .trois:hover {
+    .card3:hover {
         transform: scale(1.2) translate(0vw, 0vw) rotate(-15deg);
     }
 
-    .quatre {
+    .card4 {
         transform: translate(5vw, -10vw) rotate(19deg);
     }
 
-    .quatre:hover {
+    .card4:hover {
         transform: scale(1.2) translate(5vw, -10vw) rotate(15deg);
     }
 
-    .cinq {
+    .card5 {
         transform: translate(-3vw, -3vw) rotate(12.5deg);
     }
 
-    .cinq:hover {
+    .card5:hover {
         transform: scale(1.2) translate(-6vw, -10vw) rotate(18deg);
     }
 
-    .six {
+    .card6 {
         transform: translate(0vw, -14vw) rotate(-12.5deg);
     }
 
-    .six:hover {
+    .card6:hover {
         transform: scale(1.2) translate(-2vw, -10vw) rotate(-20deg);
     }
 

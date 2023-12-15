@@ -1,33 +1,4 @@
-const titrePresent = document.querySelector('.first').textContent
-gsap.set('.first', {text:''})
-gsap.to('.first',{
-    text:titrePresent,
-    duration:2,
-})
 
-const maTimeline= gsap.timeline()
-
-
-maTimeline.from('.dev',{ 
-    duration :1.5,
-    x : -300,
-    opacity: 0,
-  
-})
-
-maTimeline.from('.web',{ 
-    duration :1.5,
-    x : -300,
-    opacity: 0,
-  
-})
-
-maTimeline.from('.crea',{ 
-    duration :1.5,
-    x : -300,
-    opacity: 0,
-  
-})
 
 gsap.from('.titleDescr, .contenuDescr',{ 
     duration :1,
