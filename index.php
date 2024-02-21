@@ -12,7 +12,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Sabine</title>
+    <meta name="description"
+        content="Présentation de mes projets personnels et professionnels dans le domaine du numérique.">
+    <meta name="keywords"
+        content="Sabine Thibout, France, front-end développeuse, back-end développeuse, full-stack développeuse, graphic designer, ui designer, portfolio, designer française, développeuse française,sabine thibout, sabinethibout, portfolio sabine thibout">
+
+    <title>Sabine Thibout | Portfolio</title>
     <link rel="stylesheet" href="styleAccueil.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="./img/logo.png" /> 
@@ -76,8 +81,8 @@
                 <a href="projet.php?proj=<?php echo $row["id_proj"]?>" style=" background-color:#<?php echo $row["couleur"]?>"  class=" card card<?php echo $row["id_proj"]?>">
                     <div class="imgCard"  style="background-image: url('./img/<?php echo $row["id_proj"]?>.jpg');"></div>
                     <div class="texte">
-                        <div class="titleCard"> Gotatrip</div>
-                        <div class="competenceCard">Développement web</div>
+                        <div class="titleCard"> <?php echo $row["titre"]?></div>
+                        <div class="competenceCard"><?php echo $row["competence_principale"]?></div>
                     </div>
                 </a>
             <?php } ?>

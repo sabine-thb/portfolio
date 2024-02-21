@@ -1,6 +1,6 @@
 gsap.from('.lienProjet',{ 
     duration :1.2,
-    x:1000,
+    x:100,
     opacity: 0,
   
 })

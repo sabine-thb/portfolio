@@ -24,7 +24,11 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabine - projets</title>
+    <meta name="description"
+        content="Présentation de mes projets personnels et professionnels dans le domaine du numérique.">
+    <meta name="keywords"
+        content="Sabine Thibout, France, front-end développeuse, back-end développeuse, full-stack développeuse, graphic designer, ui designer, portfolio, designer française, développeuse française,sabine thibout, sabinethibout, portfolio sabine thibout">
+    <title>Sabine Thibout | portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleProjets.css">
     <link rel="shortcut icon" type="image/png" href="./img/logo.png" />
