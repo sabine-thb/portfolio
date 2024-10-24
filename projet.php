@@ -43,7 +43,7 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
     <header>
         <nav>
             <a href="index.php" class="lienLogo">
-                <img src="./img/logo.png" alt="retour à l'accueil" class="logo">
+                <img src="./img/logoContour.png" alt="retour à l'accueil" class="logo">
             </a>
             <a href="index.php#quiSuisJe" class="navItems change"></a>
             <a href="index.php#mesProjets" class="navItems change2"></a>
@@ -51,6 +51,9 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
         </nav>
     </header>
     <section>
+        <a href="index.php#mesProjets" class="back">
+            <img src="./img/arrowBack.svg" alt="Retour aux projets" class="backImg">
+        </a>
         <div class="wrapper">
             <a href="<?php foreach ($result as $row) echo $row["lien"]?>" style=" background-color:#<?php foreach ($result as $row) echo $row["couleur"]?>" class="card deux">
                     <div class="imgCard" style="background-image: url('./img/<?php foreach ($result as $row) echo $row["id_proj"]?>.jpg');"></div>
@@ -66,7 +69,6 @@ $result=$stmt-> fetchall(PDO::FETCH_ASSOC);
                 </div>
                 <div class="date">Réalisé en <?php foreach ($result as $row) echo $row["date"]?> </div>
                 <div class="txt"><?php foreach ($result as $row) echo $row["description"]?></div>
-                <a href="index.php#mesProjets" class="autresProjets">Voir les autres projets</a>
                 <a href="<?php foreach ($result as $row) echo $row["lien"]?>" class="lienProjet">Voir le projet</a>
            </div>
            

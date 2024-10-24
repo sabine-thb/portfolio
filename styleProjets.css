@@ -10,55 +10,57 @@ body {
     font-family: "Pangolin", "sans-serif";
 }
 
+
+.navItems{
+    color:#282828;
+}   
+
+
 section{
-    padding: 20px 20px 60px 20px;
+    padding: 50px 50px 60px 50px;
+}
+
+.backImg{
+    margin-bottom:20px;
 }
 
 .competencesContainer{
     display:flex;
+    flex-direction: column;
     justify-content: flex-start;
-    gap:15px;
+    gap:5px;
     padding:20px 0px 30px 0px;
 }
 
+
 .taches{
-    height:50px;
-    width:100px;
+    height:30px;
+    width:50px;
 }
 
-.competences{
-    font-size:1.4rem;
-}
+
 
 .date{
     font-size:1.2rem;
-    color:#7D9B9B;;
-    /* background-color: #7D9B9B;
-    box-shadow: 0px 4px 90px 0px rgba(0, 0, 0, 0.25) inset; */
-    /* padding:15px;
-    border-radius: 8px;; */
-    
+    color:#7D9B9B;
 }
 
 /*Je mets en place la carte du projet en question*/
 .card {
-    width:80vw;
-    height:100vw;
+    height:450px;
     box-shadow: 0px 4px 90px 0px rgba(0, 0, 0, 0.25);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4.5fr 2fr;
     place-content: center;
     transition: ease-in-out 0.2s;
-    margin: auto;
     margin-bottom:30px;
-    margin-top:30px;
 }
 
 .imgCard {
     background-size: cover;
     background-position: center;
-    margin: 5vw;
+    margin: 15px;
 }
 
 
@@ -70,11 +72,16 @@ a {
 .titleCard,
 .competenceCard {
     text-align: center;
-    font-size:1.2rem;
+    
 }
 
 .titleCard {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin-top:15px;
+}
+
+.competenceCard {
+    font-size: 0.8rem;
 }
 
 .description{
@@ -82,11 +89,12 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap:10px;
-    font-size:1.2rem;
+    font-size:1rem;
+    max-width: 600px;
 }
 
 .txt{
-    margin-bottom:30px;
+    margin-bottom:15px;
 }
 
 .titreProj{
@@ -101,6 +109,8 @@ a {
     display:flex;
     gap:20px;
 }
+
+
 /*Je mets en place le bouton lien vers le projet*/
 
 .lienProjet{
@@ -109,11 +119,13 @@ a {
     padding:5px 20px 5px 20px;
     border-radius: 50px;
     transition: padding 0.2s ease-in-out;
+    align-self: flex-end;
+    font-size: 0.8rem;
 
 }
 
 .lienProjet:hover{
-    padding:7px 22px 7px 22px;
+    padding:5px 25px;
 }
 
 
@@ -128,6 +140,8 @@ a {
 .autresProjets:hover{
     font-weight:600;
 }
+
+
 
 /*Je mets en place le footer*/
 
@@ -146,7 +160,7 @@ footer{
 
 .line{
     width:100%;
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
 }
 
 .txtContact{
@@ -196,7 +210,7 @@ footer{
 
 @media(min-width:600px){
 
-    .description{
+    .description, .card{
         margin: 0px 50px 0px 50px;
     }
 
@@ -204,12 +218,12 @@ footer{
         font-size: 1.5rem;
     }
 
-    .card{
-        width:70vw;
-        height:90vw;
+    .back{
+        margin-left:50px;
     }
 
-   
+    
+
 }
 
 
@@ -217,7 +231,7 @@ footer{
 @media(min-width:850px){
     .wrapper{
         display:flex;
-        align-items: flex-end;
+        align-items: center;
         height: fit-content;
     }
 
@@ -226,10 +240,6 @@ footer{
         height:500px;
         margin:0px 20px 50px 50px;
         flex-shrink: 0;
-    }
-
-    .imgCard{
-        margin:25px;
     }
 
     .txt{
@@ -250,30 +260,29 @@ footer{
     }
 
     .circle {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 }
 
-@media(min-width:1000px){
-    .wrapper{
-        align-items:flex-start;
-    }
-}
 
 @media(min-width:1100px){
-    .card{
-        width:450px;
-        height:600px;
-    }
-
-    .description{
-        font-size:1.5rem;
-    }
 
     .competences{
-        font-size:1.7rem;
+        font-size:1.2rem;
        
     }
+
+    .competencesContainer{
+        flex-direction: row;
+        align-items: center;
+        gap:20px;
+    }
+
+    .taches{
+        height: 50px;
+        width: 100px;
+    }
 }
+
 

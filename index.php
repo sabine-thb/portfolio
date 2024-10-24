@@ -56,12 +56,11 @@
     <section class="description" id="quiSuisJe">
         <h1 class="titleDescr">Qui suis-je ?</h1>
         <div class="contenuDescr">
-            <p>Actuellement en 2ème année de BUT Métiers du Multimédia et de l’Internet, je suis
+            <p>Actuellement en 3ème année de BUT Métiers du Multimédia et de l’Internet, je suis
                 passionnée par la création d’interfaces web.</p>
 
-            <p>Que ce soit la réalisation de wireframes ou le développement web, tout m’intéresse ! <br>Je me suis découvert
-                en
-                première année une préférence particulière pour le tout ce qui touche au code front et back.</p>
+            <p>Que ce soit la réalisation de wireframes ou le développement web, tout m’intéresse ! <br>
+        J'aime concevoir des produits de A à Z, en passant par une phase de réflexion, de design, puis de conception technique.</p>
             <p>J'ai choisi de poursuivre mon cursus avec le parcours développement web et dispositifs interactifs.</p>
             <p>Curieuse et motivée, je ne cesse d’en apprendre davantage chaque jour, et j’espère avoir l’opportunité de
                 travailler plus tard dans le développement d’interfaces :) </p>
